@@ -119,5 +119,28 @@ btnsave.addEventListener("click",function(){
 })
 }
 
+const selecfil = document.getElementById("selectlist")
+
+function filterlist() {
+    if (selecfil.value === "Toutes") {
+        affichertach();
+    }
+    else{
+        let listfil = taches.filter(e=>e.situation === selecfil.value)
+         listtaches.innerHTML =""
+         listfil.forEach(e=>{
+             listtaches.innerHTML +=`
+        <div class="tache">
+          <p>name du tache : <b>${e.name}</b></p>
+          <p>situation :<b> ${e.situation}</b></p>
+          <button class="sup" data-id="${e.id}">suppirer</button>
+          <button class="edit" data-id="${e.id}">edit</button>
+        </div>
+        `;
+     })
+  }
+}
+selecfil.addEventListener("change",filterlist)
+
 
 affichertach();
