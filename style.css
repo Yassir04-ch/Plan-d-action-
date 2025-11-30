@@ -1,0 +1,41 @@
+label{
+    display: block;
+}
+div.list{
+   width: 28%;
+}
+div.form-display{
+   background-color: rgba(0, 0, 0, 0.231);
+   place-content: center;
+   place-items: center;
+   width:60%;
+   position: fixed;
+   left: 20%;
+   top: 10px;
+   display: none;
+}
+button#close{
+    display: block;
+    background-color: red;
+    border: none;
+    margin-top: 10px;
+}
+button#save{
+    display: block;
+    border: none;
+    padding: 3px;
+    background-color: rgb(33, 177, 33);
+}
+div.joueur{
+    background-color: rgba(0, 0, 0, 0.288);
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.joueur button{
+    background-color: red;
+    border: none;
+    border-radius: 7px;
+}
