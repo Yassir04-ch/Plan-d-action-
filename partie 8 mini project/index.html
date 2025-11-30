@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestionnaire de tâches</title>
+</head>
+<body>
+    <section class="container">
+        <div class="ajouttach">
+          <form class="ajouter" id="form">
+             <label for="name">name de tache</label>
+             <input id="name" type="text" required>
+             <button id="btnadd">ajouter tache</button>
+          </form>
+        </div>
+        <div  class="listtach">
+        <select  id="selectlist" class="selectlist">
+            <option selected>Toutes</option>
+            <option >terminer </option>
+            <option>non terminer</option>
+         </select>
+        <div id="taches" class="content">
+          
+        </div>
+        </div>
+    </section>
+    <div id="form-display" class="form-display">
+        <form id="form-edit">
+             <label for="name">name de tache</label>
+             <input id="newname" type="text" required>
+             <label for="situation">situation</label>
+             <input type="text" id="situation" required>
+             <button id="save">Save</button>
+        </form>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body{
+    padding: 5px;
+    background-image: linear-gradient(to bottom , rgb(251, 251, 251) , rgb(58, 58, 72));
+    height: 100vh;
+    overflow: hidden;
+}
+section.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 95%;
+}
+input,select{
+    border-radius: 7px;
+    border: none;
+    padding: 5px;
+}
+
+label,button{
+    display: block;
+}
+div.ajouttach{
+    height: 95%;
+    width: 25%;
+    background-image: linear-gradient(to right , rgb(172, 162, 162) , rgba(0, 0, 0, 0.669));
+    color: white;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+div.ajouttach form{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+div.listtach{
+    background-color: rgba(7, 6, 6, 0.477);
+    border-radius: 7px;
+    width: 70%;
+    height: 95%;
+    padding: 10px;
+}
+
+div.ajouttach button#btnadd{
+    background-color: rgb(37, 180, 37);
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 4px;
+    border-radius: 7px;
+
+} 
+
+div.tache{
+    background-color: rgba(240, 248, 255, 0.947);
+    width: 40%;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px;
+}
+div.content{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+}
+div.tache button.sup{
+  background-color: red;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 90%;
+  border-radius: 7px;
+}
+div.tache button.edit{
+  background-color: orangered;
+  color: white;
+  border: none;
+  width: 90%;
+  margin-top: 5px;
+  border-radius: 7px;
+}
+button{
+    cursor: pointer;
+}
+
+div.form-display{
+    position: fixed;
+    display: none;
+    top: 0;
+    background: rgba(0, 0, 0, 0.381);
+    color: white;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    place-content: center;
+}
+
+div.form-display form{
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div.form-display form button{
+    background-color: rgb(39, 155, 39);
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+}
