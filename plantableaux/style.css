@@ -1,0 +1,13 @@
+body{
+    padding: 20px;
+}
+section.container{
+    display: flex;
+    justify-content: space-between;
+}
+label,button{
+    display: block;
+}
+div.form-display{
+    display: none;
+}
