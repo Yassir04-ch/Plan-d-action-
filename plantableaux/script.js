@@ -108,7 +108,7 @@ function findidsup(){
     let id = e.target.getAttribute("data-id");
     suppirer(id);
    }
-});
+ });
 }
 
 function suppirer(id){
@@ -162,5 +162,32 @@ function tridecroison(){
 
 const triZA = document.getElementById("triZA");
 triZA.addEventListener("click",tridecroison)
+
+// recherche
+
+const inprecherche = document.getElementById("recherche") 
+function recherche(){
+  let listrech = contacts.filter(e=>e.nom.includes(inprecherche.value))
+  if (inprecherche.value.trim() === "") {
+    affichercontact();
+  }
+  else{
+  listcont.innerHTML = "";
+  listrech.forEach(e=>{
+    listcont.innerHTML +=`
+      <div class="card-contact">
+         <p>${e.nom}</p>
+         <p>${e.email}</p>
+         <p>${e.telephone}</p>
+         <button data-id="${e.id}" class="edit">edit</button>
+         <button data-id="${e.id}" class="sup">supprimer</button>
+        </div>
+    `
+  
+  });
+}
+}
+
+inprecherche.addEventListener("input",recherche)
 
 affichercontact();
